@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(Untitled.jpg);
+            background-size: cover;
+            display: grid;
+            place-items: center;
+        }
+        form{
+            height: 400px;
+            width: 500px;
+            backdrop-filter: blur(10px);
+            background-color: #ffffff58;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+        input{
+            height: 30px;
+            width: 250px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000;
+            padding: 0px 20px;
+            outline: none;
+            font-size: 15px;
+        }
+        input::placeholder{
+            color: #000;
+        }
+        .button{
+            width: 100px;
+            background-color: #ffffff83;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h1>Sign In</h1>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="email id">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Conform Password">
+        <input type="submit" value="Sign In" class="button">
+    </form>
+</body>
+</html>
